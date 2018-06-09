@@ -14,5 +14,7 @@ public interface ContentShareContract {
         void onKakaoShare();
 
         void onFaceBookShare();
+
+        void onTwitterShare();
     }
 }

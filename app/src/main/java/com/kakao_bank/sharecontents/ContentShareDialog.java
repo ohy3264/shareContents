@@ -35,7 +35,7 @@ public class ContentShareDialog extends DialogFragment implements ContentShareCo
         }
 
         public void faceBookShareButtonClicked() {
-
+            presenter.onFaceBookShare();
         }
 
         public void instargramShareButtonClicked() {

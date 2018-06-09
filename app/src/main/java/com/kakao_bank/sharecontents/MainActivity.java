@@ -22,5 +22,4 @@ public class MainActivity extends AppCompatActivity {
             dialog.show(getFragmentManager(), "");
         }
     }
-    //merge test123
 }

@@ -14,6 +14,7 @@ import com.kakao.message.template.SocialObject;
 import com.kakao.network.ErrorResult;
 import com.kakao.network.callback.ResponseCallback;
 import com.kakao.util.helper.log.Logger;
+import com.twitter.sdk.android.tweetcomposer.TweetComposer;
 
 /**
  * Created by ohyowan on 2018. 6. 2..
@@ -76,5 +77,13 @@ public class ContentSharePresenter implements ContentShareContract.Presenter {
         ShareLinkContent content = new ShareLinkContent.Builder()
                 .setContentUrl(Uri.parse("https://developers.facebook.com"))
                 .build();
+    }
+
+    @Override
+    public void onTwitterShare() {
+        //https://github.com/twitter/twitter-kit-android/wiki/Getting-Started
+        TweetComposer.Builder builder = new TweetComposer.Builder(context)
+                .text("just setting up my Twitter Kit.");
+        builder.show();
     }
 }

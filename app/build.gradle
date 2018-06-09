@@ -31,8 +31,10 @@ dependencies {
     implementation 'com.android.support:support-v4:27.0.0'
     implementation 'com.android.support:support-v13:27.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    // 카카오링크 sdk를 사용하기 위해 필요.
+    // 카카오링크 sdk
     implementation group: 'com.kakao.sdk', name: 'kakaolink', version: '1.11.1'
     // facebook sdk
     implementation 'com.facebook.android:facebook-share:[4,5)'
+    // twitter sdk
+    implementation 'com.twitter.sdk.android:tweet-composer:3.1.1'
 }
